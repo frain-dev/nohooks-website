@@ -41,13 +41,14 @@
                 <NuxtLink to="https://getconvoy.io/cloud" class="text-14 text-gray-500 font-normal">Powered by <span class="text-primary-400">Convoy</span></NuxtLink>
             </section>
 
-            <section class=" px-20px max-w-[988px] mx-auto">
-                <video loop autoplay class="rounded-24px shadow-sm border border-primary-50">
+            <section class="px-20px max-w-[988px] w-full mx-auto bg-[url(~/assets/img/video-screenshot.png)] bg-contain bg-center bg-no-repeat">
+                <video loop autoplay class="rounded-24px shadow-sm border border-primary-50 w-full min-h-[500px]">
                     <source src="~/assets/videos/demo.mp4" type="video/mp4" />
                     <p>
                         Your browser doesn't support HTML video. Here is a
                         <a href="~/assets/videos/demo.mp4">link to the video</a> instead.
                     </p>
+                    <img src="~/assets/img/video-screenshot.png" class="shadow-sm border border-primary-50 w-full min-h-[500px]" alt="video screenshot">
                 </video>
             </section>
         </main>
