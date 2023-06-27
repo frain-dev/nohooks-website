@@ -9,12 +9,12 @@
 
                 <ul class="flex items-center justify-between gap-24px">
                     <li>
-                        <NuxtLink to="https://github.com/frain-dev/unoffical-webhooks">
+                        <NuxtLink target="_blank" to="https://github.com/frain-dev/unofficial-webhooks">
                             <img src="~/assets/img/github.png" alt="github logo">
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="https://app.nohooks.io" class="px-10px py-8px text-14 font-normal bg-primary-25 rounded-8px text-primary-400">Login / Sign up</NuxtLink>
+                        <NuxtLink target="_blank" to="https://app.nohooks.io" class="px-10px py-8px text-14 font-normal bg-primary-25 rounded-8px text-primary-400">Login / Sign up</NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -35,7 +35,7 @@
                                 fill="#EDF2F7" />
                         </svg>
                     </NuxtLink>
-                    <NuxtLink to="/" target="_blank" class="flex items-center py-12px px-16px w-fit text-primary-400 border border-primary-400 rounded-8px cursor-pointer">Documentation</NuxtLink>
+                    <NuxtLink to="https://sincere-braid-52e.notion.site/Nohooks-Documentation-4125058d7991424a86342d0ee245165f" target="_blank" noRel class="flex items-center py-12px px-16px w-fit text-primary-400 border border-primary-400 rounded-8px cursor-pointer">Documentation</NuxtLink>
                 </div>
 
                 <NuxtLink to="https://getconvoy.io/cloud" class="text-14 text-gray-500 font-normal">Powered by <span class="text-primary-400">Convoy</span></NuxtLink>
