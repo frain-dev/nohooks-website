@@ -42,7 +42,7 @@
             </section>
 
             <section class="px-20px max-w-[988px] w-full mx-auto bg-[url(none)] md:bg-[url(~/assets/img/video-screenshot.png)] bg-contain bg-center bg-no-repeat">
-                <video loop autoplay class="rounded-24px shadow-sm border border-primary-50 w-full min-h-[500px]">
+                <video loop autoplay muted playsinline class="rounded-24px shadow-sm border border-primary-50 w-full min-h-[500px]">
                     <source src="~/assets/videos/demo.mp4" type="video/mp4" />
                     <p>
                         Your browser doesn't support HTML video. Here is a
