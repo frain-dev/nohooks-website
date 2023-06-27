@@ -23,7 +23,7 @@
         <main class="pb-200px">
             <section class="max-w-[900px] mx-auto p-20px py-110px text-center flex flex-col gap-50px items-center">
                 <h1 class="text-[48px] font-bold leading-[60px] bg-clip-text">Webhooks on Platforms with Nohooks</h1>
-                <p class="text-gray-500 text-16 max-w-[500px]">Nohooks enables you to connect and start receiving webhook events based on activities from third party platforms like Notion and Render, with more platforms coming soon.</p>
+                <p class="text-gray-500 text-16 max-w-[500px]">Nohooks enables you to connect and start receiving webhook events based on activities from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 
 
                 <div class="flex items-center gap-24px justify-center flex-wrap mx-auto w-fit">
