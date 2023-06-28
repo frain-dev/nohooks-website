@@ -7,6 +7,20 @@
 
 
 <script setup lang="ts">
+useHead({
+    script: [
+        {
+            innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-65GTQ707LB');
+        `
+        },
+        { src: 'https://www.googletagmanager.com/gtag/js?id=G-65GTQ707LB', async: true }
+    ]
+})
 useSeoMeta({
     title: 'Nohooks | Webhooks for platforms with no webhooks',
     ogTitle: 'Nohooks | Webhooks for platforms with no webhooks',
