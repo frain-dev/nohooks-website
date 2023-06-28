@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <header>
             <nav class="flex items-center justify-between max-w-[900px] mx-auto p-20px">
                 <NuxtLink to="/" class="logo">
@@ -9,7 +8,7 @@
 
                 <ul class="flex items-center justify-between gap-24px">
                     <li>
-                        <NuxtLink target="_blank" to="https://github.com/frain-dev/unofficial-webhooks">
+                        <NuxtLink target="_blank" to="https://github.com/frain-dev/convoy">
                             <img src="~/assets/img/github.png" alt="github logo">
                         </NuxtLink>
                     </li>
