@@ -52,7 +52,10 @@
             </section>
         </main>
 
-        <p class="text-12 text-center text-gray-400 pb-50px">© 2023 Frain Technologies Inc</p>
+        <div class="mx-auto flex items-center justify-center gap-24px">
+            <p class="text-12 text-center text-gray-400 pb-50px">© 2023 Frain Technologies Inc</p>
+            <NuxtLink class="text-12 text-center text-gray-400 pb-50px" to="/legal/Privacy-Policy-Convoy.pdf">Privacy Policy</NuxtLink>
+        </div>
     </div>
 </template>
 
