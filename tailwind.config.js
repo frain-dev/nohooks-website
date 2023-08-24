@@ -19,7 +19,11 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				desktop: { max: '1050px' }
+				desktop: { max: '1050px' },
+				'md-min': { min: '768px' },
+				md: { max: '768px' },
+				lg: { min: '1049px' },
+				mobile: { max: '450px' }
 			},
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
@@ -54,6 +58,8 @@ module.exports = {
 				18: ['18px', '30px'],
 				20: ['20px', '30px'],
 				24: ['24px', '35px'],
+				28: ['28px', '52px'],
+				30: ['30px', '38px'],
 				h1: ['20px', '140%'],
 				h2: ['18px', '140%'],
 				h3: ['16px', '140%'],
