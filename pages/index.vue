@@ -3,7 +3,7 @@
 		<Header></Header>
 		<main class="pt-86px">
 			<section class="max-w-[976px] mx-auto px-16px pt-90px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:22%] desktop:bg-none">
-				<h1 class="text-[60px] leading-[72px] desktop:text-[48px] font-bold max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
+				<h1 class="text-[60px] leading-[72px] desktop:text-[48px] desktop:leading-[62px] font-bold max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
 				<p class="text-gray-600 text-16 mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
@@ -64,7 +64,7 @@
 
 				<div class="flex flex-wrap items-center justify-center text-gray-600">
 					<div class="mr-26px text-18 mb-14px text-center">All plans include:</div>
-					<span class="flex items-center mr-20px text-16 last-of-type:mr-0 mb-14px" v-for="(inclusion, i) in inclusions" :key="i">
+					<span class="flex items-center mr-20px text-16 desktop:text-14 last-of-type:mr-0 mb-14px" v-for="(inclusion, i) in inclusions" :key="i">
 						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-6px">
 							<path
 								d="M10.09 14.58L7.27231 11.7623C7.07753 11.5675 6.76191 11.5669 6.56645 11.761L5.85606 12.4664C5.66011 12.661 5.65899 12.9776 5.85356 13.1735L5.85481 13.1748L9.73645 17.0564C9.93171 17.2517 10.2483 17.2517 10.4436 17.0564L19.7364 7.76352C19.9317 7.56825 19.9317 7.25167 19.7364 7.05641L19.0336 6.35352L19.0333 6.35372C18.8382 6.15854 18.5217 6.15845 18.3264 6.35352L10.09 14.58Z"
@@ -102,7 +102,7 @@
 				</div>
 			</section>
 
-			<section class="flex flex-col items-center text-center mb-150px">
+			<section class="flex flex-col items-center text-center mb-150px px-16px">
 				<h3 class="text-gray-900 text-[32px] leading-[52px] font-bold max-w-[520px] mb-16px">
 					We
 					<span class="text-primary-400">Love</span>
