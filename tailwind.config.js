@@ -19,10 +19,11 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				desktop: { max: '1050px' },
+				desktop: { max: '880px' },
 				'md-min': { min: '768px' },
 				md: { max: '768px' },
-				lg: { min: '1049px' },
+				lg: { min: '881px' },
+				"lg-max": { min: '1100px' },
 				mobile: { max: '450px' }
 			},
 			fontFamily: {

@@ -1,56 +1,57 @@
 <template>
 	<div>
 		<Header></Header>
-		<main>
-			<section class="max-w-[900px] mx-auto px-16px pt-176px text-center flex flex-col items-center">
+		<main class="pt-66px">
+			<section class="max-w-[976px] mx-auto px-16px pt-110px text-center flex flex-col items-center bg-[url(~/assets/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:26%] desktop:bg-none">
 				<h1 class="text-[48px] font-bold leading-[60px] max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
 				<p class="text-gray-600 text-18 desktop:text-16 desktop:mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
-			<section class="bg-[url(~/assets/img/radial-bg.png)] bg-no-repeat bg-center bg-cover max-w-[1342px] mx-auto mt-40px px-16px flex flex-col items-center">
-				<div class="flex items-center gap-26px mb-40px">
-					<button class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-white-100">Get Started</button>
-					<button class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</button>
-				</div>
-
-				<div class="rounded-12px px-30px pt-30px desktop:px-24px desktop:pt-24px max-w-[820px] mx-auto bg-white-40 backdrop-blur-[21px] mb-54px">
-					<img src="~/assets/img/HomePage.png" />
-				</div>
-
-				<p class="mb-32px text-gray-600 text-16">Supported Platforms</p>
-				<ul class="flex items-center gap-50px">
-					<li>
-						<NuxtLink to="/">
-							<img src="~/assets/svg/render.svg" />
-						</NuxtLink>
-					</li>
-					<li>
-						<NuxtLink to="/">
-							<img src="~/assets/svg/Notion.svg" />
-						</NuxtLink>
-					</li>
-					<li>
-						<NuxtLink to="/">
-							<img src="~/assets/svg/digitalOcean.svg" />
-						</NuxtLink>
-					</li>
-				</ul>
-			</section>
-
-			<section class="flex flex-col items-center py-200px px-16px" id="features">
-				<h3 class="text-gray-900 text-center text-28 lg:text-[32px] lg:leading-[52px] font-bold max-w-[520px] mx-auto">
-					Everything You Need To Receive
-					<span class="text-primary-400">Webhook</span>
-					Events
-				</h3>
-
-				<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px max-w-[766px] w-full mx-auto">
-					<div class="min-w-[339px] mobile:w-full" v-for="(feature, index) in features" :key="index">
-						<div class="pl-26px border-l-[.5px] border-dashed border-l-primary-400">
-							<p class="text-18 text-gray-600 font-semibold mb-10px">{{ feature.feature }}</p>
-							<p class="text-14 text-gray-600 font-normal max-w-[320px]">{{ feature.description }}</p>
-						</div>
+			<section class="bg-[url(~/assets/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px ">
+				<div class="flex flex-col items-center bg-[url(~/assets/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[94%_3.5%] bg-[163%_2.5%] bg-[length:87%] px-16px">
+					<div class="flex items-center gap-26px mb-40px">
+						<NuxtLink target="_blank" to="https://app.nohooks.io" class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-white-100">Get Started</NuxtLink>
+						<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</NuxtLink>
 					</div>
+
+					<div class="rounded-12px px-30px pt-30px desktop:px-24px desktop:pt-24px max-w-[820px] mx-auto bg-white-40 backdrop-blur-[21px] mb-54px">
+						<img src="~/assets/img/HomePage.png" />
+					</div>
+
+					<p class="mb-32px text-gray-600 text-16">Supported Platforms</p>
+					<ul class="flex items-center gap-50px">
+						<li>
+							<NuxtLink to="https://render.com/" target="_blank">
+								<img src="~/assets/svg/render.svg" />
+							</NuxtLink>
+						</li>
+						<li>
+							<NuxtLink to="https://www.notion.so/" target="_blank">
+								<img src="~/assets/svg/Notion.svg" />
+							</NuxtLink>
+						</li>
+						<li>
+							<NuxtLink to="https://www.digitalocean.com/" target="_blank">
+								<img src="~/assets/svg/digitalOcean.svg" />
+							</NuxtLink>
+						</li>
+					</ul>
+					<section class="flex flex-col items-center py-200px px-16px" id="features">
+						<h3 class="text-gray-900 text-center text-28 lg:text-[32px] lg:leading-[52px] font-bold max-w-[520px] mx-auto">
+							Everything You Need To Receive
+							<span class="text-primary-400">Webhook</span>
+							Events
+						</h3>
+
+						<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px max-w-[766px] w-full mx-auto">
+							<div class="min-w-[339px] mobile:w-full" v-for="(feature, index) in features" :key="index">
+								<div class="pl-26px border-l-[.5px] border-dashed border-l-primary-400">
+									<p class="text-18 text-gray-600 font-semibold mb-10px">{{ feature.feature }}</p>
+									<p class="text-14 text-gray-600 font-normal max-w-[320px]">{{ feature.description }}</p>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 			</section>
 
@@ -94,7 +95,7 @@
 
 							{{ feature }}
 						</div>
-						<button class="mt-8px w-full text-white-100 text-10 font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">{{ i == 0 ? 'Start for free' : 'Get Started' }}</button>
+						<NuxtLink target="_blank" to="https://app.nohooks.io" class="mt-8px w-full text-white-100 text-10 font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">{{ i == 0 ? 'Start for free' : 'Get Started' }}</NuxtLink>
 					</div>
 				</div>
 			</section>
@@ -145,7 +146,7 @@ const plans = [
 	background: linear-gradient(white, white) padding-box, linear-gradient(50deg, rgba(237, 242, 247, 1) 55%, rgba(71, 125, 179, 1) 100%) border-box;
 	border: 0.5px solid transparent;
 	&.pro {
-        background: linear-gradient(white, white) padding-box, linear-gradient(50deg, rgba(220,250,230,1) 55%, rgba(71,205,137,1) 100%) border-box;
+		background: linear-gradient(white, white) padding-box, linear-gradient(50deg, rgba(220, 250, 230, 1) 55%, rgba(71, 205, 137, 1) 100%) border-box;
 
 		.line {
 			background: linear-gradient(50deg, rgba(220, 250, 230, 1) 45%, rgba(169, 239, 197, 1) 100%);
@@ -155,5 +156,4 @@ const plans = [
 		background: linear-gradient(50deg, rgba(237, 242, 247, 1) 45%, rgba(218, 229, 240, 1) 100%);
 	}
 }
-
 </style>
