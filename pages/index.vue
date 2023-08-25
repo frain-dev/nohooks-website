@@ -4,10 +4,10 @@
 		<main class="pt-86px">
 			<section class="max-w-[976px] mx-auto px-16px pt-90px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:22%] desktop:bg-none">
 				<h1 class="text-[48px] font-bold leading-[60px] max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
-				<p class="text-gray-600 text-18 desktop:text-16 desktop:mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
+				<p class="text-gray-600 text-16 desktop:text-16 mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
-			<section class="bg-[url(/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px ">
+			<section class="bg-[url(/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px">
 				<div class="flex flex-col items-center bg-[url(/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[87%_3.5%] bg-[163%_2.5%] bg-[length:85%] px-16px">
 					<div class="flex items-center gap-26px mb-40px">
 						<NuxtLink target="_blank" to="https://app.nohooks.io" class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-white-100">Get Started</NuxtLink>
@@ -45,7 +45,7 @@
 
 						<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px max-w-[766px] w-full mx-auto">
 							<div class="min-w-[339px] mobile:w-full" v-for="(feature, index) in features" :key="index">
-								<div class="pl-26px border-l-[.5px] border-dashed border-l-primary-400">
+								<div class="pl-26px bg-[linear-gradient(#477DB3_40%,rgba(255,255,255,0)_0%)] bg-left bg-repeat-y bg-[length:1px_10px]">
 									<p class="text-18 text-gray-600 font-semibold mb-10px">{{ feature.feature }}</p>
 									<p class="text-14 text-gray-600 font-normal max-w-[320px]">{{ feature.description }}</p>
 								</div>
@@ -95,7 +95,9 @@
 
 							{{ feature }}
 						</div>
-						<NuxtLink target="_blank" to="https://app.nohooks.io" class="mt-24px block w-full text-white-100 text-10 text-center font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">{{ i == 0 ? 'Start for free' : 'Get Started' }}</NuxtLink>
+						<NuxtLink target="_blank" to="https://app.nohooks.io" class="mt-24px block w-full text-white-100 text-10 text-center font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">
+							{{ i == 0 ? 'Start for free' : 'Get Started' }}
+						</NuxtLink>
 					</div>
 				</div>
 			</section>
