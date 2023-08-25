@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<nav class="w-full mx-auto bg-white-100 z-50 fixed left-[50%] -translate-x-1/2 translate-y-0 transition-all duration-300 shadow-[inset_0px_-3px_8px_rgba(255,255,255,0.07)] backdrop-blur-[36]">
+		<nav class="w-full mx-auto bg-transparent z-50 fixed left-[50%] -translate-x-1/2 translate-y-0 transition-all duration-300">
 			<div class="flex items-center max-w-[1044px] mx-auto p-20px">
 				<div class="flex items-center">
 					<button class="mr-26px hidden desktop:block" @click="showMenu = !showMenu">
