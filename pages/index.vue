@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<Header></Header>
-		<main class="pt-66px">
-			<section class="max-w-[976px] mx-auto px-16px pt-110px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:26%] desktop:bg-none">
+		<main class="pt-86px">
+			<section class="max-w-[976px] mx-auto px-16px pt-90px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:22%] desktop:bg-none">
 				<h1 class="text-[48px] font-bold leading-[60px] max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
 				<p class="text-gray-600 text-18 desktop:text-16 desktop:mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
@@ -101,16 +101,16 @@
 			</section>
 
 			<section class="flex flex-col items-center text-center mb-150px">
-				<h3 class="text-gray-900 text-[32px] leading-[52px] font-bold max-w-[520px] mb-10px">
+				<h3 class="text-gray-900 text-[32px] leading-[52px] font-bold max-w-[520px] mb-16px">
 					We
 					<span class="text-primary-400">Love</span>
 					Open-Source
 				</h3>
 
-				<p class="text-18 text-gray-600 font-normal max-w-[718px] mb-40px">Source code powering Nohooks is available on Github. Forks, contributions, and reviews are welcomed.</p>
+				<p class="text-16 text-gray-600 font-normal max-w-[592px] mb-40px">Source code powering Nohooks is available on Github. Forks, contributions, and reviews are welcomed.</p>
 
-				<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="bg-gray-600 text-10 text-white-100 p-10px rounded-8px flex items-center">
-					<img src="/img/github.png" alt="github logo" class="h-10px w-10px rounded-100px mr-8px" />
+				<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="bg-gray-600 text-14 text-white-100 py-12px px-16px rounded-8px flex items-center">
+					<img src="/img/github.png" alt="github logo" class="h-14px w-14px rounded-100px mr-8px" />
 					Star on Github
 				</NuxtLink>
 			</section>

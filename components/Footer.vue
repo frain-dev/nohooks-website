@@ -25,7 +25,7 @@ const footerLinks = [
 	{ link: 'Features', route: '/#features' },
 	{ link: 'Docs', route: 'https://sincere-braid-52e.notion.site/Nohooks-Documentation-4125058d7991424a86342d0ee245165f' },
 	{ link: 'Blog', route: 'https://getconvoy.io/blog' },
-	{ link: 'Github', route: 'https://github.com/frain-dev/convoy' },
+	{ link: 'Github', route: 'https://github.com/frain-dev/nohooks-backend' },
 	{ link: 'Convoy', route: 'https://getconvoy.io/' }
 ];
 </script>
