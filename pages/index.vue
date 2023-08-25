@@ -3,7 +3,7 @@
 		<Header></Header>
 		<main class="pt-86px">
 			<section class="max-w-[976px] mx-auto px-16px pt-90px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:22%] desktop:bg-none">
-				<h1 class="text-[60px] font-bold leading-[72px] max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
+				<h1 class="text-[60px] leading-[72px] desktop:text-[48px] font-bold max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
 				<p class="text-gray-600 text-16 mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
@@ -45,7 +45,7 @@
 
 						<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px max-w-[766px] w-full mx-auto">
 							<div class="min-w-[339px] mobile:w-full" v-for="(feature, index) in features" :key="index">
-								<div class="pl-26px bg-[linear-gradient(#477DB3_40%,rgba(255,255,255,0)_0%)] bg-left bg-repeat-y bg-[length:1px_10px]">
+								<div class="pl-26px bg-[linear-gradient(#91B1D1_40%,rgba(255,255,255,0)_0%)] bg-left bg-repeat-y bg-[length:1px_12px]">
 									<p class="text-18 text-gray-600 font-semibold mb-10px">{{ feature.feature }}</p>
 									<p class="text-14 text-gray-600 font-normal max-w-[320px]">{{ feature.description }}</p>
 								</div>
