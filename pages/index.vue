@@ -8,7 +8,7 @@
 			</section>
 
 			<section class="bg-[url(/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px ">
-				<div class="flex flex-col items-center bg-[url(/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[94%_3.5%] bg-[163%_2.5%] bg-[length:87%] px-16px">
+				<div class="flex flex-col items-center bg-[url(/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[87%_3.5%] bg-[163%_2.5%] bg-[length:85%] px-16px">
 					<div class="flex items-center gap-26px mb-40px">
 						<NuxtLink target="_blank" to="https://app.nohooks.io" class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-white-100">Get Started</NuxtLink>
 						<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</NuxtLink>
