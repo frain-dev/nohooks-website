@@ -77,7 +77,7 @@
 
 				<div class="flex flex-wrap justify-between max-w-[1036px] w-full mx-auto">
 					<div class="rounded-12px border border-gradient p-24px md-min:max-w-[308px] w-full mt-36px" :class="{ pro: i == 2 }" v-for="(plan, i) in plans" :key="i">
-						<div class="min-h-[142px] mb-24px">
+						<div class="min-h-[134px] mb-24px">
 							<p class="text-gray-800 font-medium text-14">{{ plan.plan }}</p>
 							<p class="text-12 text-gray-600 mb-24px min-h-[40px]">
 								{{ plan.description }}
@@ -95,7 +95,7 @@
 
 							{{ feature }}
 						</div>
-						<NuxtLink target="_blank" to="https://app.nohooks.io" class="mt-8px w-full text-white-100 text-10 font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">{{ i == 0 ? 'Start for free' : 'Get Started' }}</NuxtLink>
+						<NuxtLink target="_blank" to="https://app.nohooks.io" class="mt-24px block w-full text-white-100 text-10 text-center font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">{{ i == 0 ? 'Start for free' : 'Get Started' }}</NuxtLink>
 					</div>
 				</div>
 			</section>
