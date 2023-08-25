@@ -4,10 +4,10 @@
 			<div class="flex items-center max-w-[1044px] mx-auto px-20px pt-20px">
 				<div class="flex items-center">
 					<button class="mr-26px hidden desktop:block" @click="showMenu = !showMenu">
-						<img src="~/assets/svg/menu-icon.svg" alt="menu icon" :class="`w-20px transition-all duration-300 ${showMenu ? 'rotate-90' : ''}`" />
+						<img src="/svg/menu-icon.svg" alt="menu icon" :class="`w-20px transition-all duration-300 ${showMenu ? 'rotate-90' : ''}`" />
 					</button>
 					<NuxtLink to="/">
-						<img src="~/assets/svg/logo.svg" alt="Nohooks logo" class="h-38px" />
+						<img src="/svg/logo.svg" alt="Nohooks logo" class="h-38px" />
 					</NuxtLink>
 				</div>
 
@@ -24,7 +24,7 @@
 				<ul class="ml-auto flex items-center gap-24px">
 					<li>
 						<NuxtLink target="_blank" to="https://github.com/frain-dev/convoy">
-							<img src="~/assets/img/github.png" alt="github logo" />
+							<img src="/img/github.png" alt="github logo" />
 						</NuxtLink>
 					</li>
 					<li>

@@ -4,7 +4,7 @@
 			<div>
 				<div class="flex items-center mb-12px">
 					<NuxtLink to="https://app.nohooks.io" class="mr-12px">
-						<img src="~/assets/svg/logo.svg" alt="Nohooks logo" class="h-38px" />
+						<img src="/svg/logo.svg" alt="Nohooks logo" class="h-38px" />
 					</NuxtLink>
 					<span class="text-primary-400 text-30 mobile:text-24 font-bold">Nohooks</span>
 				</div>

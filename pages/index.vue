@@ -2,37 +2,37 @@
 	<div>
 		<Header></Header>
 		<main class="pt-66px">
-			<section class="max-w-[976px] mx-auto px-16px pt-110px text-center flex flex-col items-center bg-[url(~/assets/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:26%] desktop:bg-none">
+			<section class="max-w-[976px] mx-auto px-16px pt-110px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:26%] desktop:bg-none">
 				<h1 class="text-[48px] font-bold leading-[60px] max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
 				<p class="text-gray-600 text-18 desktop:text-16 desktop:mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
-			<section class="bg-[url(~/assets/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px ">
-				<div class="flex flex-col items-center bg-[url(~/assets/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[94%_3.5%] bg-[163%_2.5%] bg-[length:87%] px-16px">
+			<section class="bg-[url(/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px ">
+				<div class="flex flex-col items-center bg-[url(/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[94%_3.5%] bg-[163%_2.5%] bg-[length:87%] px-16px">
 					<div class="flex items-center gap-26px mb-40px">
 						<NuxtLink target="_blank" to="https://app.nohooks.io" class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-white-100">Get Started</NuxtLink>
 						<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</NuxtLink>
 					</div>
 
 					<div class="rounded-12px px-30px pt-30px desktop:px-24px desktop:pt-24px max-w-[820px] mx-auto bg-white-40 backdrop-blur-[21px] mb-54px">
-						<img src="~/assets/img/HomePage.png" />
+						<img src="/img/HomePage.png" />
 					</div>
 
 					<p class="mb-32px text-gray-600 text-16">Supported Platforms</p>
 					<ul class="flex items-center gap-50px">
 						<li>
 							<NuxtLink to="https://render.com/" target="_blank">
-								<img src="~/assets/svg/render.svg" />
+								<img src="/svg/render.svg" />
 							</NuxtLink>
 						</li>
 						<li>
 							<NuxtLink to="https://www.notion.so/" target="_blank">
-								<img src="~/assets/svg/Notion.svg" />
+								<img src="/svg/Notion.svg" />
 							</NuxtLink>
 						</li>
 						<li>
 							<NuxtLink to="https://www.digitalocean.com/" target="_blank">
-								<img src="~/assets/svg/digitalOcean.svg" />
+								<img src="/svg/digitalOcean.svg" />
 							</NuxtLink>
 						</li>
 					</ul>
@@ -110,7 +110,7 @@
 				<p class="text-18 text-gray-600 font-normal max-w-[718px] mb-40px">Source code powering Nohooks is available on Github. Forks, contributions, and reviews are welcomed.</p>
 
 				<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="bg-gray-600 text-10 text-white-100 p-10px rounded-8px flex items-center">
-					<img src="~/assets/img/github.png" alt="github logo" class="h-10px w-10px rounded-100px mr-8px" />
+					<img src="/img/github.png" alt="github logo" class="h-10px w-10px rounded-100px mr-8px" />
 					Star on Github
 				</NuxtLink>
 			</section>
