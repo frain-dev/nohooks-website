@@ -144,7 +144,7 @@ const plans = [
 <style lang="scss">
 .border-gradient {
 	background: linear-gradient(white, white) padding-box, linear-gradient(50deg, rgba(237, 242, 247, 1) 55%, rgba(71, 125, 179, 1) 100%) border-box;
-	border: 0.5px solid transparent;
+	border: 1px solid transparent;
 	&.pro {
 		background: linear-gradient(white, white) padding-box, linear-gradient(50deg, rgba(220, 250, 230, 1) 55%, rgba(71, 205, 137, 1) 100%) border-box;
 

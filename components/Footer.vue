@@ -12,7 +12,7 @@
 			</div>
 
 			<ul class="flex mobile:flex-col gap-60px md:gap-40px mobile:gap-24px ml-auto mobile:ml-[unset] mobile:mt-30px">
-				<li class="text-16 text-gray-600" v-for="(link, i) in footerLinks" :key="i">
+				<li class="text-14 text-gray-600" v-for="(link, i) in footerLinks" :key="i">
 					<NuxtLink :to="link.route">{{ link.link }}</NuxtLink>
 				</li>
 			</ul>
