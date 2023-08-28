@@ -20,11 +20,9 @@ module.exports = {
 		extend: {
 			screens: {
 				desktop: { max: '880px' },
-				'md-min': { min: '768px' },
 				md: { max: '768px' },
 				lg: { min: '881px' },
-				"lg-max": { min: '1100px' },
-				mobile: { max: '450px' }
+				mobile: { max: '450px' },
 			},
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
@@ -181,5 +179,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: []
+	plugins: [require('@tailwindcss/container-queries')]
 };

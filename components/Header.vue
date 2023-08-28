@@ -1,7 +1,7 @@
 <template>
 	<header>
-		<nav class="w-full mx-auto bg-white-40 z-50 fixed left-[50%] -translate-x-1/2 translate-y-0 transition-all duration-300">
-			<div class="flex items-center max-w-[1044px] mx-auto p-20px">
+		<nav class="w-full mx-auto bg-white-40 backdrop-blur-[12px] z-50 fixed left-[50%] -translate-x-1/2 translate-y-0 transition-all duration-300">
+			<div class="flex items-center max-w-[1280px] mx-auto p-24px">
 				<div class="flex items-center">
 					<button class="mr-26px hidden desktop:block" @click="showMenu = !showMenu">
 						<img src="/svg/menu-icon.svg" alt="menu icon" :class="`w-20px transition-all duration-300 ${showMenu ? 'rotate-90' : ''}`" />
@@ -23,8 +23,8 @@
 
 				<ul class="ml-auto flex items-center gap-24px">
 					<li>
-						<NuxtLink target="_blank" to="https://github.com/frain-dev/convoy">
-							<img src="/img/github.png" alt="github logo" />
+						<NuxtLink target="_blank" to="https://github.com/frain-dev/convoy" >
+							<img src="/img/github.png" alt="github logo" class="rounded-100px"/>
 						</NuxtLink>
 					</li>
 					<li>

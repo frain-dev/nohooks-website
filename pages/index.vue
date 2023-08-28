@@ -1,14 +1,18 @@
 <template>
 	<div>
 		<Header></Header>
-		<main class="pt-86px">
-			<section class="max-w-[976px] mx-auto px-16px pt-90px text-center flex flex-col items-center bg-[url(/img/top-arrow.png)] bg-no-repeat bg-left-top bg-[length:22%] desktop:bg-none">
+		<main class="pt-86px @container">
+			<section
+				class="max-w-[1210px] mx-auto px-16px pt-100px text-center flex flex-col items-center @[1280px]:bg-[url(/img/top-arrow.png)] @[1100px]:bg-[url(/img/top-arrow-md.png)] @[768px]:bg-[url(/img/top-arrow-sm.png)] bg-no-repeat @[1280px]:bg-[0.5%_0%] @[1220px]:bg-[1%_0%] @[1100px]:bg-[3%_0%] @[768px]:bg-[3.5%_0%] @[1280px]:bg-[length:22%] @[1100px]:bg-[length:10%] @[768px]:bg-[length:3.5%] mobile:bg-none"
+			>
 				<h1 class="text-[60px] leading-[72px] desktop:text-[48px] desktop:leading-[62px] font-bold max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
 				<p class="text-gray-600 text-16 mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
 			<section class="bg-[url(/img/radial-bg.png)] bg-no-repeat bg-top bg-contain md:bg-[length:186%] max-w-[1342px] mx-auto mt-40px">
-				<div class="flex flex-col items-center bg-[url(/img/bottom-arrow.png)] desktop:bg-none bg-no-repeat lg-max:bg-[87%_3.5%] bg-[145%_2.5%] bg-[length:85%] px-16px">
+				<div
+					class="flex flex-col items-center @[1280px]:bg-[url(/img/bottom-arrow.png)] @[1000px]:bg-[url(/img/bottom-arrow-md.png)] @[840px]:bg-[url(/img/bottom-arrow-sm.png)] desktop:bg-none bg-no-repeat @[1280px]:bg-[87%_3.5%] @[1000px]:bg-[59px_1.5%] @[840px]:bg-[21px_1.5%] @[1280px]:bg-[length:85%] @[840px]:bg-[length:100%] px-16px"
+				>
 					<div class="flex items-center gap-26px mb-40px">
 						<NuxtLink target="_blank" to="https://app.nohooks.io" class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-white-100">Get Started</NuxtLink>
 						<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</NuxtLink>
@@ -36,26 +40,27 @@
 							</NuxtLink>
 						</li>
 					</ul>
-					<section class="flex flex-col items-center py-200px px-16px" id="features">
+
+					<div class="flex flex-col items-center py-200px" id="features">
 						<h3 class="text-gray-900 text-center text-28 lg:text-[32px] lg:leading-[52px] font-bold max-w-[520px] mx-auto">
 							Everything You Need To Receive
 							<span class="text-primary-400">Webhook</span>
 							Events
 						</h3>
 
-						<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px max-w-[766px] w-full mx-auto">
-							<div class="min-w-[339px] mobile:w-full" v-for="(feature, index) in features" :key="index">
+						<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px desktop:gap-x-20px mobile:gap-x-0 max-w-[766px] w-full mx-auto">
+							<div class="min-w-[339px]" v-for="(feature, index) in features" :key="index">
 								<div class="pl-26px bg-[linear-gradient(#91B1D1_40%,rgba(255,255,255,0)_0%)] bg-left bg-repeat-y bg-[length:1px_12px]">
 									<p class="text-18 text-gray-600 font-semibold mb-10px">{{ feature.feature }}</p>
-									<p class="text-14 text-gray-600 font-normal max-w-[320px]">{{ feature.description }}</p>
+									<p class="text-14 text-gray-600 font-normal lg:max-w-[320px]">{{ feature.description }}</p>
 								</div>
 							</div>
 						</div>
-					</section>
+					</div>
 				</div>
 			</section>
 
-			<section id="pricing" class="flex flex-col items-center mb-100px px-20px">
+			<section id="pricing" class="flex flex-col items-center mb-200px px-20px">
 				<h3 class="text-gray-900 text-[32px] leading-[52px] text-center font-bold mb-10px">
 					Affordable Pricing to
 					<span class="text-primary-400">‘Webhookify’</span>
@@ -63,7 +68,7 @@
 				</h3>
 
 				<div class="flex flex-wrap items-center justify-center text-gray-600">
-					<div class="mr-26px text-18 mb-14px text-center">All plans include:</div>
+					<div class="mr-26px text-18 mb-14px text-center md:w-full">All plans include:</div>
 					<span class="flex items-center mr-20px text-16 desktop:text-14 last-of-type:mr-0 mb-14px" v-for="(inclusion, i) in inclusions" :key="i">
 						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-6px">
 							<path
@@ -75,8 +80,8 @@
 					</span>
 				</div>
 
-				<div class="flex flex-wrap justify-between max-w-[1036px] w-full mx-auto">
-					<div class="rounded-12px border border-gradient p-24px md-min:max-w-[308px] w-full mt-36px" :class="{ pro: i == 2 }" v-for="(plan, i) in plans" :key="i">
+				<div class="flex flex-wrap justify-center gap-24px max-w-[1036px] w-full mx-auto">
+					<div class="rounded-12px border border-gradient p-24px @[768px]:max-w-[308px] w-full mt-36px" :class="{ pro: i == 2 }" v-for="(plan, i) in plans" :key="i">
 						<div class="min-h-[134px] mb-24px">
 							<p class="text-gray-800 font-medium text-14">{{ plan.plan }}</p>
 							<p class="text-12 text-gray-600 mb-24px min-h-[40px]">
