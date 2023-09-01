@@ -22,7 +22,7 @@ module.exports = {
 				desktop: { max: '880px' },
 				md: { max: '768px' },
 				lg: { min: '881px' },
-				mobile: { max: '450px' },
+				mobile: { max: '450px' }
 			},
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
@@ -66,6 +66,7 @@ module.exports = {
 			},
 			colors: {
 				gray: {
+					20: '#E8E8E9',
 					25: '#FCFCFD',
 					50: '#F9FAFB',
 					100: '#F2F4F7',
@@ -76,7 +77,9 @@ module.exports = {
 					600: '#475467',
 					700: '#344054',
 					800: '#1D2939',
-					900: '#101828'
+					900: '#101828',
+					normal: 'var(--gray-normal)',
+					strong: 'var(--gray-strong)'
 				},
 				primary: {
 					25: '#EDF2F7',
@@ -131,13 +134,14 @@ module.exports = {
 					900: '#7A2E0E'
 				},
 				white: {
-					100: 'rgba(255, 255, 255, 1)',
-					64: 'rgba(255, 255, 255, 0.64)',
-					40: 'rgba(255, 255, 255, 0.40)',
-					24: 'rgba(255, 255, 255, 0.24)',
-					16: 'rgba(255, 255, 255, 0.16)',
-					8: 'rgba(255, 255, 255, 0.08)',
-					4: 'rgba(255, 255, 255, 0.04)'
+					100: 'var(--white-100)',
+					64: 'rgba(var(--color-white), 0.64)',
+					40: 'var(--white-40)',
+					30: 'var(--white-30)',
+					24: 'rgba(var(--color-white), 0.24)',
+					16: 'rgba(var(--color-white), 0.16)',
+					8: 'rgba(var(--color-white), 0.08)',
+					4: 'rgba(var(--color-white), 0.04)'
 				}
 			},
 			animation: {

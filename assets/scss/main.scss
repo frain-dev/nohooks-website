@@ -1,0 +1,51 @@
+@tailwind base;
+
+/* Firefox */
+* {
+	scrollbar-width: 5px;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	@apply bg-white-100 rounded-bl-16px;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-white: 255, 255, 255;
+		--gray-strong: #101828;
+		--gray-normal: #475467;
+		--white-30: rgba(255, 255, 255, 0.3);
+		--white-40: rgba(255, 255, 255, 0.4);
+		--white-100: rgba(255, 255, 255, 1);
+	}
+
+	.radial-bg {
+		background: url(/img/radial-bg.png);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--gray-strong: #ffffff;
+			--gray-normal: #fcfcfd;
+			--white-30: rgba(16, 24, 40, 0.48);
+			--white-40: hsla(220, 43%, 11%, 0.24);
+			--white-100: #101828;
+		}
+		.radial-bg {
+			background: url(/img/radial-bg-dark.png);
+		}
+	}
+}

@@ -1,5 +1,5 @@
 <template>
-	<footer>
+	<footer class="bg-white-100">
 		<div class="flex items-center md:items-start md:flex-col max-w-[1320px] px-20px mx-auto mb-80px">
 			<div>
 				<div class="flex items-center mb-12px">
@@ -8,14 +8,18 @@
 					</NuxtLink>
 					<span class="text-primary-400 text-30 mobile:text-24 font-bold">Nohooks</span>
 				</div>
-				<NuxtLink to="https://getconvoy.io/" class="text-gray-600 text-10 font-normal">Powered By Convoy</NuxtLink>
+				<NuxtLink to="https://getconvoy.io/" class="text-gray-normal text-10 font-normal">Powered By Convoy</NuxtLink>
 			</div>
 
 			<ul class="flex md:flex-col gap-60px md:gap-40px mobile:gap-24px ml-auto md:ml-[unset] md:mt-30px">
-				<li class="text-14 text-gray-600" v-for="(link, i) in footerLinks" :key="i">
+				<li class="text-14 text-gray-normal" v-for="(link, i) in footerLinks" :key="i">
 					<NuxtLink :to="link.route">{{ link.link }}</NuxtLink>
 				</li>
 			</ul>
+		</div>
+		<div class="mx-auto flex items-center justify-center gap-24px">
+			<p class="text-12 text-center text-gray-400 pb-50px">© 2023 Frain Technologies Inc</p>
+			<NuxtLink class="text-12 text-center text-gray-400 pb-50px" to="/legal/Privacy-Policy-Convoy.pdf">Privacy Policy</NuxtLink>
 		</div>
 	</footer>
 </template>
