@@ -19,8 +19,8 @@
 							<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</NuxtLink>
 						</div>
 
-						<div class="rounded-12px px-30px pt-30px desktop:px-24px desktop:pt-24px max-w-[820px] mx-auto bg-white-30 backdrop-blur-[21px] mb-54px">
-							<img src="/img/HomePage.png" />
+						<div class="rounded-12px px-30px pt-30px desktop:px-24px desktop:pt-24px max-w-[820px] w-full mx-auto bg-white-30 backdrop-blur-[21px] mb-54px">
+							<img src="/img/Home Page.png" />
 						</div>
 
 						<p class="mb-32px text-gray-normal text-16">Supported Platforms</p>
