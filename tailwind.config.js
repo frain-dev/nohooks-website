@@ -19,7 +19,10 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				desktop: { max: '1050px' }
+				desktop: { max: '880px' },
+				md: { max: '768px' },
+				lg: { min: '881px' },
+				mobile: { max: '450px' }
 			},
 			fontFamily: {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
@@ -54,6 +57,8 @@ module.exports = {
 				18: ['18px', '30px'],
 				20: ['20px', '30px'],
 				24: ['24px', '35px'],
+				28: ['28px', '52px'],
+				30: ['30px', '38px'],
 				h1: ['20px', '140%'],
 				h2: ['18px', '140%'],
 				h3: ['16px', '140%'],
@@ -61,6 +66,7 @@ module.exports = {
 			},
 			colors: {
 				gray: {
+					20: '#E8E8E9',
 					25: '#FCFCFD',
 					50: '#F9FAFB',
 					100: '#F2F4F7',
@@ -71,7 +77,9 @@ module.exports = {
 					600: '#475467',
 					700: '#344054',
 					800: '#1D2939',
-					900: '#101828'
+					900: '#101828',
+					normal: 'var(--gray-normal)',
+					strong: 'var(--gray-strong)'
 				},
 				primary: {
 					25: '#EDF2F7',
@@ -126,17 +134,19 @@ module.exports = {
 					900: '#7A2E0E'
 				},
 				white: {
-					100: 'rgba(255, 255, 255, 1)',
-					64: 'rgba(255, 255, 255, 0.64)',
-					40: 'rgba(255, 255, 255, 0.40)',
-					24: 'rgba(255, 255, 255, 0.24)',
-					16: 'rgba(255, 255, 255, 0.16)',
-					8: 'rgba(255, 255, 255, 0.08)',
-					4: 'rgba(255, 255, 255, 0.04)'
+					100: 'var(--white-100)',
+					64: 'rgba(var(--color-white), 0.64)',
+					40: 'var(--white-40)',
+					30: 'var(--white-30)',
+					24: 'rgba(var(--color-white), 0.24)',
+					16: 'rgba(var(--color-white), 0.16)',
+					8: 'rgba(var(--color-white), 0.08)',
+					4: 'rgba(var(--color-white), 0.04)'
 				}
 			},
 			animation: {
-				'spin-slow': 'spin 3s linear infinite'
+				'spin-slow': 'spin 3s linear infinite',
+				pulsate: 'pulsate 7s linear infinite'
 			},
 			keyframes: {
 				'loader-1': {
@@ -170,9 +180,20 @@ module.exports = {
 						width: '16px',
 						transform: 'translatex(-.6em)'
 					}
+				},
+				pulsate: {
+					'0%': {
+						transform: 'scale(1)',
+					},
+					'50%': {
+						transform: 'scale(1.05)',
+					},
+					'100%': {
+						transform: 'scale(1)',
+					}
 				}
 			}
 		}
 	},
-	plugins: []
+	plugins: [require('@tailwindcss/container-queries')]
 };

@@ -1,76 +1,173 @@
 <template>
-    <div>
-        <header>
-            <nav class="flex items-center justify-between max-w-[900px] mx-auto p-20px">
-                <NuxtLink to="/" class="logo">
-                    <h1 class="font-bold text-gray-600 text-16">Nohooks</h1>
-                </NuxtLink>
+	<div class="bg-white-100">
+		<Header></Header>
+		<main class="pt-86px @container">
+			<section
+				class="max-w-[1210px] mx-auto px-16px pt-100px text-center flex flex-col items-center @[1280px]:bg-[url(/img/top-arrow.png)] @[1100px]:bg-[url(/img/top-arrow-md.png)] @[768px]:bg-[url(/img/top-arrow-sm.png)] bg-no-repeat @[1280px]:bg-[0.5%_0%] @[1220px]:bg-[1%_0%] @[1100px]:bg-[3%_0%] @[768px]:bg-[3.5%_0%] @[1280px]:bg-[length:22%] @[1100px]:bg-[length:10%] @[768px]:bg-[length:3.5%] mobile:bg-none"
+			>
+				<h1 class="text-gray-strong text-[60px] leading-[72px] desktop:text-[48px] desktop:leading-[62px] font-bold max-w-[718px]">Webhooks on Platforms Without Webhooks</h1>
+				<p class="text-gray-normal text-16 mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
+			</section>
 
-                <ul class="flex items-center justify-between gap-24px">
-                    <li>
-                        <NuxtLink target="_blank" to="https://github.com/frain-dev/convoy">
-                            <img src="~/assets/img/github.png" alt="github logo">
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink target="_blank" to="https://app.nohooks.io" class="px-10px py-8px text-14 font-normal bg-primary-25 rounded-8px text-primary-400">Login / Sign up</NuxtLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+			<section class="relative overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:animate-pulsate radial-bg before:-z-20 pt-40px">
+				<div class="max-w-[1342px] mx-auto">
+					<div
+						class="flex flex-col items-center !bg-transparent @[1280px]:bg-[url(/img/bottom-arrow.png)] @[1000px]:bg-[url(/img/bottom-arrow-md.png)] @[840px]:bg-[url(/img/bottom-arrow-sm.png)] desktop:bg-none bg-no-repeat @[1280px]:bg-[87%_3.5%] @[1000px]:bg-[59px_1.5%] @[840px]:bg-[21px_1.5%] @[1280px]:bg-[length:85%] @[840px]:bg-[length:100%] px-16px"
+					>
+						<div class="flex items-center gap-26px mb-40px">
+							<NuxtLink target="_blank" to="https://app.nohooks.io" class="rounded-8px px-16px py-12px border border-primary-400 bg-primary-400 text-14 text-gray-25">Get Started</NuxtLink>
+							<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="rounded-8px px-16px py-12px border border-success-400 text-14 text-success-400">Star on Github</NuxtLink>
+						</div>
 
-        <main class="pb-200px">
-            <section class="max-w-[900px] mx-auto p-20px py-110px text-center flex flex-col gap-50px items-center">
-                <h1 class="text-[48px] font-bold leading-[60px] bg-clip-text">Webhooks on Platforms with Nohooks</h1>
-                <p class="text-gray-500 text-16 max-w-[500px]">Nohooks enables you to connect and start receiving webhook events based on activities from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
+						<div class="rounded-12px px-30px pt-30px desktop:px-24px desktop:pt-24px max-w-[820px] w-full mx-auto bg-white-30 backdrop-blur-[21px] mb-54px">
+							<img src="/img/Home-Page.png" />
+						</div>
 
+						<p class="mb-32px text-gray-normal text-16">Supported Platforms</p>
+						<ul class="flex items-center gap-50px">
+							<li>
+								<NuxtLink to="https://render.com/" target="_blank">
+									<picture>
+										<source srcset="/svg/render-dark.svg" media="(prefers-color-scheme:dark)" />
+										<img src="/svg/render.svg" alt="render icon" />
+									</picture>
+								</NuxtLink>
+							</li>
+							<li>
+								<NuxtLink to="https://www.notion.so/" target="_blank">
+									<picture>
+										<source srcset="/svg/Notion-dark.svg" media="(prefers-color-scheme:dark)" />
+										<img src="/svg/Notion.svg" alt="notion icon" />
+									</picture>
+								</NuxtLink>
+							</li>
+							<li>
+								<NuxtLink to="https://www.digitalocean.com/" target="_blank">
+									<picture>
+										<source srcset="/svg/digitalOcean-dark.svg" media="(prefers-color-scheme:dark)" />
+										<img src="/svg/digitalOcean.svg" alt="digital ocean icon" />
+									</picture>
+								</NuxtLink>
+							</li>
+						</ul>
 
-                <div class="flex items-center gap-24px justify-center flex-wrap mx-auto w-fit">
-                    <NuxtLink to="https://app.nohooks.io" target="_blank" id="cta-button" class="flex items-center py-12px px-16px gap-26px w-fit text-white-100 rounded-8px shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                        Connect Your Account
-                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.56635 8.97749L5.30302 11.2408C5.16915 11.3752 5.01006 11.4819 4.83488 11.5546C4.6597 11.6274 4.47187 11.6648 4.28218 11.6648C4.09249 11.6648 3.90467 11.6274 3.72949 11.5546C3.55431 11.4819 3.39522 11.3752 3.26135 11.2408C3.12625 11.1073 3.01899 10.9484 2.94578 10.7732C2.87257 10.5979 2.83488 10.4099 2.83488 10.22C2.83488 10.0301 2.87257 9.84205 2.94578 9.66682C3.01899 9.49158 3.12625 9.33262 3.26135 9.19915L5.52468 6.93582C5.63453 6.82598 5.69624 6.677 5.69624 6.52165C5.69624 6.36631 5.63453 6.21733 5.52468 6.10749C5.41484 5.99764 5.26586 5.93593 5.11052 5.93593C4.95517 5.93593 4.80619 5.99764 4.69635 6.10749L2.43302 8.37665C1.97706 8.87295 1.73046 9.52621 1.74473 10.2C1.75899 10.8738 2.03301 11.516 2.50957 11.9926C2.98612 12.4692 3.62836 12.7432 4.30216 12.7574C4.97596 12.7717 5.62922 12.5251 6.12552 12.0692L8.39468 9.80582C8.50453 9.69598 8.56624 9.547 8.56624 9.39165C8.56624 9.23631 8.50453 9.08733 8.39468 8.97749C8.28484 8.86764 8.13586 8.80593 7.98052 8.80593C7.82517 8.80593 7.67619 8.86764 7.56635 8.97749V8.97749ZM5.65302 8.84915C5.70752 8.90322 5.77217 8.94599 5.84324 8.97502C5.91431 9.00405 5.99041 9.01876 6.06718 9.01832C6.14395 9.01876 6.22006 9.00405 6.29113 8.97502C6.3622 8.94599 6.42684 8.90322 6.48135 8.84915L9.35135 5.97915C9.46119 5.86931 9.5229 5.72033 9.5229 5.56499C9.5229 5.40964 9.46119 5.26066 9.35135 5.15082C9.24151 5.04098 9.09253 4.97927 8.93718 4.97927C8.78184 4.97927 8.63286 5.04098 8.52302 5.15082L5.65302 8.02082C5.59834 8.07505 5.55494 8.13957 5.52533 8.21065C5.49571 8.28173 5.48047 8.35798 5.48047 8.43499C5.48047 8.51199 5.49571 8.58824 5.52533 8.65932C5.55494 8.73041 5.59834 8.79492 5.65302 8.84915ZM12.7522 10.5H12.1688V9.91665C12.1688 9.76194 12.1074 9.61357 11.998 9.50417C11.8886 9.39478 11.7402 9.33332 11.5855 9.33332C11.4308 9.33332 11.2824 9.39478 11.173 9.50417C11.0636 9.61357 11.0022 9.76194 11.0022 9.91665V10.5H10.4188C10.2641 10.5 10.1158 10.5614 10.0064 10.6708C9.89697 10.7802 9.83552 10.9286 9.83552 11.0833C9.83552 11.238 9.89697 11.3864 10.0064 11.4958C10.1158 11.6052 10.2641 11.6667 10.4188 11.6667H11.0022V12.25C11.0022 12.4047 11.0636 12.5531 11.173 12.6625C11.2824 12.7719 11.4308 12.8333 11.5855 12.8333C11.7402 12.8333 11.8886 12.7719 11.998 12.6625C12.1074 12.5531 12.1688 12.4047 12.1688 12.25V11.6667H12.7522C12.9069 11.6667 13.0553 11.6052 13.1647 11.4958C13.2741 11.3864 13.3355 11.238 13.3355 11.0833C13.3355 10.9286 13.2741 10.7802 13.1647 10.6708C13.0553 10.5614 12.9069 10.5 12.7522 10.5ZM10.308 7.89249L12.5713 5.62332C13.0273 5.12702 13.2739 4.47376 13.2596 3.79996C13.2454 3.12616 12.9714 2.48393 12.4948 2.00737C12.0182 1.53082 11.376 1.25679 10.7022 1.24253C10.0284 1.22826 9.37515 1.47486 8.87885 1.93082L6.60968 4.19415C6.55529 4.24854 6.51215 4.31311 6.48272 4.38417C6.45328 4.45524 6.43813 4.5314 6.43813 4.60832C6.43813 4.68524 6.45328 4.7614 6.48272 4.83246C6.51215 4.90353 6.55529 4.9681 6.60968 5.02249C6.66407 5.07687 6.72864 5.12002 6.7997 5.14945C6.87077 5.17889 6.94693 5.19404 7.02385 5.19404C7.10077 5.19404 7.17693 5.17889 7.248 5.14945C7.31906 5.12002 7.38363 5.07687 7.43802 5.02249L9.70135 2.75915C9.83522 2.62476 9.99431 2.51812 10.1695 2.44535C10.3447 2.37259 10.5325 2.33513 10.7222 2.33513C10.9119 2.33513 11.0997 2.37259 11.2749 2.44535C11.4501 2.51812 11.6091 2.62476 11.743 2.75915C11.8781 2.89262 11.9854 3.05158 12.0586 3.22682C12.1318 3.40205 12.1695 3.59007 12.1695 3.77999C12.1695 3.9699 12.1318 4.15792 12.0586 4.33315C11.9854 4.50839 11.8781 4.66735 11.743 4.80082L9.47968 7.06415C9.42501 7.11838 9.38161 7.1829 9.352 7.25398C9.32238 7.32507 9.30713 7.40131 9.30713 7.47832C9.30713 7.55533 9.32238 7.63157 9.352 7.70266C9.38161 7.77374 9.42501 7.83826 9.47968 7.89249C9.53391 7.94716 9.59843 7.99056 9.66951 8.02017C9.7406 8.04979 9.81684 8.06503 9.89385 8.06503C9.97086 8.06503 10.0471 8.04979 10.1182 8.02017C10.1893 7.99056 10.2538 7.94716 10.308 7.89249V7.89249Z"
-                                fill="#EDF2F7" />
-                        </svg>
-                    </NuxtLink>
-                    <NuxtLink to="https://sincere-braid-52e.notion.site/Nohooks-Documentation-4125058d7991424a86342d0ee245165f" target="_blank" noRel class="flex items-center py-12px px-16px w-fit text-primary-400 border border-primary-400 rounded-8px cursor-pointer">Documentation</NuxtLink>
-                </div>
+						<div class="flex flex-col items-center py-200px" id="features">
+							<h3 class="text-gray-strong text-center text-28 lg:text-[32px] lg:leading-[52px] font-bold max-w-[520px] mx-auto">
+								Everything You Need To Receive
+								<span class="text-primary-400">Webhook</span>
+								Events
+							</h3>
 
-                <NuxtLink to="https://getconvoy.io/cloud" class="text-14 text-gray-500 font-normal">Powered by <span class="text-primary-400">Convoy</span></NuxtLink>
+							<div class="flex flex-wrap mt-50px gap-y-40px gap-x-70px desktop:gap-x-20px mobile:gap-x-0 max-w-[766px] w-full mx-auto">
+								<div class="min-w-[339px]" v-for="(feature, index) in features" :key="index">
+									<div class="pl-26px bg-[linear-gradient(#91B1D1_40%,rgba(255,255,255,0)_0%)] bg-left bg-repeat-y bg-[length:1px_12px]">
+										<p class="text-18 text-gray-normal font-semibold mb-10px">{{ feature.feature }}</p>
+										<p class="text-14 text-gray-normal font-normal lg:max-w-[320px]">{{ feature.description }}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="pricing" class="flex flex-col items-center mb-200px px-20px">
+				<h3 class="text-gray-strong text-[32px] leading-[52px] text-center font-bold mb-10px">
+					Affordable Pricing to
+					<span class="text-primary-400">‘Webhookify’</span>
+					your dependencies
+				</h3>
+
+				<div class="flex flex-wrap items-center justify-center text-gray-normal">
+					<div class="mr-26px text-18 mb-14px text-center md:w-full">All plans include:</div>
+					<span class="flex items-center mr-20px text-16 desktop:text-14 last-of-type:mr-0 mb-14px" v-for="(inclusion, i) in inclusions" :key="i">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-6px">
+							<path
+								d="M10.09 14.58L7.27231 11.7623C7.07753 11.5675 6.76191 11.5669 6.56645 11.761L5.85606 12.4664C5.66011 12.661 5.65899 12.9776 5.85356 13.1735L5.85481 13.1748L9.73645 17.0564C9.93171 17.2517 10.2483 17.2517 10.4436 17.0564L19.7364 7.76352C19.9317 7.56825 19.9317 7.25167 19.7364 7.05641L19.0336 6.35352L19.0333 6.35372C18.8382 6.15854 18.5217 6.15845 18.3264 6.35352L10.09 14.58Z"
+								fill="#47CD89"
+							/>
+						</svg>
+						{{ inclusion }}
+					</span>
+				</div>
+
+				<div class="flex flex-wrap justify-center gap-24px max-w-[1036px] w-full mx-auto">
+					<div class="rounded-12px border-[0.5px] border-transparent border-gradient p-24px @[768px]:max-w-[308px] w-full mt-36px" :class="{ pro: i == 2 }" v-for="(plan, i) in plans" :key="i">
+						<div class="min-h-[134px] mb-24px">
+							<p class="text-gray-strong font-medium text-14">{{ plan.plan }}</p>
+							<p class="text-12 text-gray-normal mb-24px min-h-[40px]">
+								{{ plan.description }}
+							</p>
+							<p class="font-bold text-18 text-gray-normal mb-16px">${{ plan.price }}/month</p>
+							<div class="line w-full h-[1px]"></div>
+						</div>
+						<div class="flex items-center text-12 text-gray-normal font-normal mb-16px" v-for="feature in plan.features" :key="feature">
+							<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-8px">
+								<path
+									d="M6.89332 9.71998L5.01486 7.84151C4.88501 7.71166 4.6746 7.71129 4.54429 7.84068L4.07069 8.31094C3.94006 8.44066 3.93931 8.65171 4.06903 8.78234L4.06986 8.78318L6.65762 11.3709C6.7878 11.5011 6.99885 11.5011 7.12903 11.3709L13.3243 5.17568C13.4545 5.0455 13.4545 4.83445 13.3243 4.70427L12.8557 4.23568L12.8556 4.23581C12.7254 4.10569 12.5145 4.10563 12.3843 4.23568L6.89332 9.71998Z"
+									fill="#98A2B3"
+								/>
+							</svg>
+
+							{{ feature }}
+						</div>
+						<NuxtLink target="_blank" to="https://app.nohooks.io" class="mt-24px block w-full text-gray-25 text-10 text-center font-medium rounded-8px p-10px" :class="i == 2 ? 'bg-success-400' : 'bg-primary-400'">
+							{{ i == 0 ? 'Start for free' : 'Get Started' }}
+						</NuxtLink>
+					</div>
+				</div>
+			</section>
+
+			<section class="flex flex-col items-center text-center mb-150px px-16px">
+				<h3 class="text-gray-strong text-[32px] leading-[52px] font-bold max-w-[520px] mb-16px">
+					We
+					<span class="text-primary-400">Love</span>
+					Open-Source
+				</h3>
+
+				<p class="text-16 text-gray-normal font-normal max-w-[592px] mb-40px">Source code powering Nohooks is available on Github. Forks, contributions, and reviews are welcomed.</p>
+
+				<NuxtLink to="https://github.com/frain-dev/nohooks-backend" target="_blank" class="bg-gray-600 text-14 text-gray-25 py-12px px-16px rounded-8px flex items-center">
+					<img src="/svg/github.svg" alt="github logo" class="h-16px w-16px mr-8px" />
+					Star on Github
+				</NuxtLink>
+			</section>
+
+			<section class="bg-white-100">
+                <Footer></Footer>
             </section>
-
-            <section class="px-20px max-w-[988px] w-full mx-auto bg-[url(none)] md:bg-[url(~/assets/img/video-screenshot.png)] bg-contain bg-center bg-no-repeat">
-                <video loop autoplay muted playsinline class="rounded-24px shadow-sm border border-primary-50 w-full min-h-[500px]">
-                    <source src="~/assets/videos/demo.mp4" type="video/mp4" />
-                    <p>
-                        Your browser doesn't support HTML video. Here is a
-                        <a href="~/assets/videos/demo.mp4">link to the video</a> instead.
-                    </p>
-                    <img src="~/assets/img/video-screenshot.png" class="shadow-sm border border-primary-50 w-full min-h-[500px]" alt="video screenshot">
-                </video>
-            </section>
-        </main>
-
-        <div class="mx-auto flex items-center justify-center gap-24px">
-            <p class="text-12 text-center text-gray-400 pb-50px">© 2023 Frain Technologies Inc</p>
-            <NuxtLink class="text-12 text-center text-gray-400 pb-50px" to="/legal/Privacy-Policy-Convoy.pdf">Privacy Policy</NuxtLink>
-        </div>
-    </div>
+		</main>
+	</div>
 </template>
+<script setup lang="ts">
+const features = [
+	{ feature: 'Failure Alerts', description: 'Get notified via email or slack about failed events and retries; as soon as they happen, you don’t have to worry about being blind sided.' },
+	{ feature: 'Custom Endpoint Configuration', description: 'Endpoint configurations including endpoint authentication and timeout for each of your endpoints, no change is required on your existing endpoints.' },
+	{ feature: 'Debuggable UI', description: 'Nohook’s friendly developer experience enables you to review and debug your webhook events. You have everything you need in view.' },
+	{ feature: 'Automatic and Manual Retries', description: 'With retry configuration, you can be rest assured not to miss any beat of event sent to you in addition to manual retry; if needed.' }
+];
 
+const inclusions = ['Custom retry config', 'Enterprise level security', '30days data retention'];
+
+const plans = [
+	{ plan: 'Hobby', description: 'Free forever for hobby use', price: 0, features: ['3 Platform connections', '10,000 Events per connection', 'One user access', 'Unlimited endpoints per connection'] },
+	{ plan: 'Mid', description: 'For average users needing to connect more platforms; with room for more event appetite', price: 20, features: ['6 Platform connections', '200,000 Events per connection ', '2 Team members limit', 'Unlimited endpoints per connection'] },
+	{ plan: 'Pro', description: 'For pro users connecting multiple platforms and receiving even more events.', price: 50, features: ['Unlimited platform connections', '1million Events per connection ', 'Unlimited team members access', 'Unlimited endpoints per connection'] }
+];
+</script>
 <style lang="scss">
-section {
-    h1 {
-        background: linear-gradient(182deg, rgb(29 41 57 / 0%), rgba(71, 125, 179, 1), rgb(29 41 57 / 72%));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.border-gradient {
+	background: linear-gradient(var(--white-100), var(--white-100)) padding-box, linear-gradient(45deg, #a9efc500 10%, rgba(71, 125, 179, 1) 100%) border-box;
 
-    #cta-button {
-        background: linear-gradient(180deg, rgb(71 125 179 / 56%) 0%, #477DB3 95.83%, #477DB3 100%);
+	&.pro {
+		background: linear-gradient(var(--white-100), var(--white-100)) padding-box, linear-gradient(45deg, #dcfae600 10%, #17b26a 100%) border-box;
 
-    }
+		.line {
+			background: linear-gradient(15deg, #a9efc500 5%, #a9efc5 100%);
+		}
+	}
+	.line {
+		background: linear-gradient(15deg, #a9efc500 5%, #dae5f0 100%);
+	}
 }
 </style>
