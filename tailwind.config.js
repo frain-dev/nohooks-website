@@ -145,7 +145,8 @@ module.exports = {
 				}
 			},
 			animation: {
-				'spin-slow': 'spin 3s linear infinite'
+				'spin-slow': 'spin 3s linear infinite',
+				pulsate: 'pulsate 2s linear infinite'
 			},
 			keyframes: {
 				'loader-1': {
@@ -178,6 +179,20 @@ module.exports = {
 						height: '24px',
 						width: '16px',
 						transform: 'translatex(-.6em)'
+					}
+				},
+				pulsate: {
+					'0%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					},
+					'50%': {
+						transform: 'scale(1.2)',
+						opacity: '0.5'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
 					}
 				}
 			}

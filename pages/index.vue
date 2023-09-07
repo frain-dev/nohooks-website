@@ -9,7 +9,7 @@
 				<p class="text-gray-normal text-16 mt-24px font-normal max-w-[718px]">Nohooks enables you to connect and start receiving webhook from third party platforms like Notion, Digital Ocean, and Render, with more platforms coming soon.</p>
 			</section>
 
-			<section class="bg-white-100 radial-bg bg-no-repeat bg-top bg-contain md:bg-[length:186%] pt-40px">
+			<section class="relative overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:animate-pulsate radial-bg before:-z-20 pt-40px">
 				<div class="max-w-[1342px] mx-auto">
 					<div
 						class="flex flex-col items-center !bg-transparent @[1280px]:bg-[url(/img/bottom-arrow.png)] @[1000px]:bg-[url(/img/bottom-arrow-md.png)] @[840px]:bg-[url(/img/bottom-arrow-sm.png)] desktop:bg-none bg-no-repeat @[1280px]:bg-[87%_3.5%] @[1000px]:bg-[59px_1.5%] @[840px]:bg-[21px_1.5%] @[1280px]:bg-[length:85%] @[840px]:bg-[length:100%] px-16px"
@@ -99,7 +99,7 @@
 								{{ plan.description }}
 							</p>
 							<p class="font-bold text-18 text-gray-normal mb-16px">${{ plan.price }}/month</p>
-							<div class="line w-full h-[0.5px]"></div>
+							<div class="line w-full h-[1px]"></div>
 						</div>
 						<div class="flex items-center text-12 text-gray-normal font-normal mb-16px" v-for="feature in plan.features" :key="feature">
 							<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-8px">
@@ -134,10 +134,8 @@
 			</section>
 
 			<section class="bg-white-100">
-				<div class="bg-[linear-gradient(180deg,white_37%,#DAE5F0_100%)]">
-					<Footer></Footer>
-				</div>
-			</section>
+                <Footer></Footer>
+            </section>
 		</main>
 	</div>
 </template>
@@ -159,16 +157,17 @@ const plans = [
 </script>
 <style lang="scss">
 .border-gradient {
-	background: linear-gradient(var(--white-100), var(--white-100)) padding-box, linear-gradient(60deg, rgba(237, 242, 247, 1) 25%, rgba(71, 125, 179, 1) 100%) border-box;
+	background: linear-gradient(var(--white-100), var(--white-100)) padding-box, linear-gradient(45deg, #a9efc500 10%, rgba(71, 125, 179, 1) 100%) border-box;
+
 	&.pro {
-		background: linear-gradient(var(--white-100), var(--white-100)) padding-box, linear-gradient(60deg, rgba(220, 250, 230, 1) 25%, rgba(71, 205, 137, 1) 100%) border-box;
+		background: linear-gradient(var(--white-100), var(--white-100)) padding-box, linear-gradient(45deg, #dcfae600 10%, #17b26a 100%) border-box;
 
 		.line {
-			background: linear-gradient(50deg, rgba(220, 250, 230, 1) 15%, rgba(71, 205, 137, 1) 100%);
+			background: linear-gradient(15deg, #a9efc500 5%, #a9efc5 100%);
 		}
 	}
 	.line {
-		background: linear-gradient(70deg, rgba(237, 242, 247, 1) 15%, rgba(71, 125, 179, 1) 100%);
+		background: linear-gradient(15deg, #a9efc500 5%, #dae5f0 100%);
 	}
 }
 </style>

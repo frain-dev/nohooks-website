@@ -1,5 +1,5 @@
 <template>
-	<footer class="bg-white-100">
+	<footer>
 		<div class="flex items-center md:items-start md:flex-col max-w-[1320px] px-20px mx-auto mb-80px">
 			<div>
 				<div class="flex items-center mb-12px">
@@ -33,3 +33,8 @@ const footerLinks = [
 	{ link: 'Convoy', route: 'https://getconvoy.io/' }
 ];
 </script>
+<style lang="scss" scoped>
+footer {
+	background: linear-gradient(180deg, var(--white-100) 37%, var(--primary-50) 100%);
+}
+</style>
